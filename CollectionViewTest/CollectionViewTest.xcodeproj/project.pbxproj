@@ -12,7 +12,9 @@
 		17988A221F3A71970020AFFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17988A201F3A71970020AFFA /* Main.storyboard */; };
 		17988A251F3A71970020AFFA /* CollectionViewTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17988A231F3A71970020AFFA /* CollectionViewTest.xcdatamodeld */; };
 		17988A271F3A71970020AFFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17988A261F3A71970020AFFA /* Assets.xcassets */; };
-		17988A2A1F3A71970020AFFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17988A281F3A71970020AFFA /* LaunchScreen.storyboard */; };
+		17988A321F3A731D0020AFFA /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17988A311F3A731D0020AFFA /* Cell.swift */; };
+		17988A341F3A764C0020AFFA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17988A331F3A764C0020AFFA /* Extensions.swift */; };
+		17988A361F3A780F0020AFFA /* Cell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17988A351F3A780F0020AFFA /* Cell2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +24,10 @@
 		17988A211F3A71970020AFFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		17988A241F3A71970020AFFA /* CollectionViewTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CollectionViewTest.xcdatamodel; sourceTree = "<group>"; };
 		17988A261F3A71970020AFFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		17988A291F3A71970020AFFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17988A2B1F3A71970020AFFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17988A311F3A731D0020AFFA /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		17988A331F3A764C0020AFFA /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		17988A351F3A780F0020AFFA /* Cell2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +62,11 @@
 			children = (
 				17988A1C1F3A71970020AFFA /* AppDelegate.swift */,
 				17988A1E1F3A71970020AFFA /* ViewController.swift */,
+				17988A311F3A731D0020AFFA /* Cell.swift */,
+				17988A351F3A780F0020AFFA /* Cell2.swift */,
+				17988A331F3A764C0020AFFA /* Extensions.swift */,
 				17988A201F3A71970020AFFA /* Main.storyboard */,
 				17988A261F3A71970020AFFA /* Assets.xcassets */,
-				17988A281F3A71970020AFFA /* LaunchScreen.storyboard */,
 				17988A2B1F3A71970020AFFA /* Info.plist */,
 				17988A231F3A71970020AFFA /* CollectionViewTest.xcdatamodeld */,
 			);
@@ -127,7 +133,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17988A2A1F3A71970020AFFA /* LaunchScreen.storyboard in Resources */,
 				17988A271F3A71970020AFFA /* Assets.xcassets in Resources */,
 				17988A221F3A71970020AFFA /* Main.storyboard in Resources */,
 			);
@@ -140,7 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17988A361F3A780F0020AFFA /* Cell2.swift in Sources */,
+				17988A341F3A764C0020AFFA /* Extensions.swift in Sources */,
 				17988A251F3A71970020AFFA /* CollectionViewTest.xcdatamodeld in Sources */,
+				17988A321F3A731D0020AFFA /* Cell.swift in Sources */,
 				17988A1F1F3A71970020AFFA /* ViewController.swift in Sources */,
 				17988A1D1F3A71970020AFFA /* AppDelegate.swift in Sources */,
 			);
@@ -155,14 +163,6 @@
 				17988A211F3A71970020AFFA /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		17988A281F3A71970020AFFA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				17988A291F3A71970020AFFA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
