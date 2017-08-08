@@ -14,9 +14,9 @@ class Cell2: BaseCell {
     
     let textLabel: UILabel = {
         let l = UILabel()
-        l.font = UIFont.systemFont(ofSize: 20)
+        l.font = UIFont.boldSystemFont(ofSize: 30)
         l.backgroundColor = UIColor.clear
-        l.text = "Pg "
+        l.text = "Pg"
         l.textAlignment = .center
         return l
     }()

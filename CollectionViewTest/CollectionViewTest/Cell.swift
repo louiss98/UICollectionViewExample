@@ -15,11 +15,13 @@ class Cell: BaseCell, UICollectionViewDataSource {
         let layout = UICollectionViewFlowLayout()
         
         //Configures the interior collectionViews Layout
-        layout.minimumLineSpacing = 10
+        layout.minimumLineSpacing = 0
         layout.scrollDirection = .horizontal
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.backgroundColor = UIColor.white
         collectionView.showsHorizontalScrollIndicator = false
+        
+        collectionView.isPagingEnabled = true
         
         return collectionView
     }()
@@ -53,12 +55,12 @@ class Cell: BaseCell, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cell2Id, for: indexPath) as! Cell2
         
-        cell.textLabel.text?.append("\(section,indexPath.item)")
+        cell.textLabel.text = "Pg \(section).\(indexPath.item)"
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: frame.width / 4, height: frame.height / 2)
+        return CGSize(width: frame.width / 2, height: frame.height / 2)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
